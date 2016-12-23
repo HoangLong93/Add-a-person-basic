@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/main.css" rel="stylesheet">
+
+    <!-- Include the AngularJS library -->
+	    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <div class="addPerson">
+                    <h2>Add a person</h2>
+                    <input type="textbox" name="add">
+                    <select name="selectGender">
+                        <option selected disabled>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <select name="selectAge" class="selectAge">
+                        <option selected disabled>Age</option>
+                    </select>
+                     
+                    <button>+</button>
+                </div>
+                <div class="listUser">
+                    <table id="listUsers">
+                        <!-- Colgroup -->
+                        <colgroup>
+                            <col span="2" style="background-color:red">
+                            <col style="background-color:yellow">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+
+                        <!--<div class="pagination">
+
+                        </div>-->
+                    </table>
+                </div>
+            </div>
+        </div>
+            <script type="text/javascript" src="js/renderUser.js"></script>
+
+            <script type="text/javascript" src="js/removeUser.js"></script>
+
+
+            <script type="text/javascript">
+                $(function(){
+                    var $select = $(".selectAge");
+                    for (i = 1; i <= 100; i++){
+                        $select.append($('<option></option>').val(i).html(i))
+                    }
+                })
+            </script>
+
+            <script type="text/javascript">
+                function editUser(child){
+                    var row = child.parentNode.parentNode;
+                    var name = row.
+                }
+            </script>
+
+    </body>
+</html>
