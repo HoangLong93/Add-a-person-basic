@@ -30,11 +30,16 @@ table{
         font-size:14px;
 
         > select {
+           width: 100px;
+            -webkit-appearance: none;
             -moz-appearance: none;
-            -webkit-appearance:none;
-            border: 0;
-            background: inherit;
+            padding: 2px 2px 2px 2px;
+            border: none;
+            margin: 0;
+            background: transparent url('../img/arrows.png') no-repeat right center;
+            
         }
+
 
         .editUser{
             text-align: right;

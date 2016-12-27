@@ -5836,10 +5836,13 @@ table {
     text-align: left;
     font-size: 14px; }
     table td > select {
-      -moz-appearance: none;
+      width: 100px;
       -webkit-appearance: none;
-      border: 0;
-      background: inherit; }
+      -moz-appearance: none;
+      padding: 2px 2px 2px 2px;
+      border: none;
+      margin: 0;
+      background: transparent url("../img/arrows.png") no-repeat right center; }
     table td .editUser {
       text-align: right; }
       table td .editUser > button {

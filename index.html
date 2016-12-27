@@ -23,7 +23,7 @@
                         <option selected disabled>Age</option>
                     </select>
                      
-                    <button>+</button>
+                    <button onclick="add()">+</button>
                 </div>
                 <div class="listUser">
                     <table id="listUsers">
@@ -54,6 +54,20 @@
             <script type="text/javascript" src="js/renderUser.js"></script>
 
             <script type="text/javascript" src="js/removeUser.js"></script>
+            
+
+            <script type="text/javascript">
+                function editUser(child){
+                    var row = child.parentNode.parentNode;
+                    console.log(row);
+                    var name = row.cells[0];
+                    var gender = row.cells[1];
+                    var age = row.cells[2];
+                    name.getElementsByTagName("P")['0'].contentEditable = true;
+                    gender.getElementsByTagName("SELECT")[0].disabled="";                 
+                    age.getElementsByTagName("SELECT")[0].disabled="";
+                }
+            </script>
 
 
             <script type="text/javascript">
@@ -63,13 +77,6 @@
                         $select.append($('<option></option>').val(i).html(i))
                     }
                 })
-            </script>
-
-            <script type="text/javascript">
-                function editUser(child){
-                    var row = child.parentNode.parentNode;
-                    var name = row.
-                }
             </script>
 
     </body>
