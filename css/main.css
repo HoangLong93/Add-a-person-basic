@@ -1529,34 +1529,34 @@ pre {
   .container-fluid:after {
     clear: both; }
 
-.row, .main {
+.row, .main, table tr {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .main:before, .row:after, .main:after {
+  .row:before, .main:before, table tr:before, .row:after, .main:after, table tr:after {
     content: " ";
     display: table; }
-  .row:after, .main:after {
+  .row:after, .main:after, table tr:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, table .edit, table .delete, .col-sm-1, .col-md-1, table .edit, table .delete, .col-lg-1, table .edit, table .delete, .col-xs-2, table .gender, table .age, .col-sm-2, .col-md-2, table .gender, table .age, .col-lg-2, table .gender, table .age, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, table .name, .col-sm-4, .col-md-4, table .name, .col-lg-4, table .name, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1, table .edit, table .delete, .col-xs-2, table .gender, table .age, .col-xs-3, .col-xs-4, table .name, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
 
-.col-xs-1 {
+.col-xs-1, table .edit, table .delete {
   width: 8.33333%; }
 
-.col-xs-2 {
+.col-xs-2, table .gender, table .age {
   width: 16.66667%; }
 
 .col-xs-3 {
   width: 25%; }
 
-.col-xs-4 {
+.col-xs-4, table .name {
   width: 33.33333%; }
 
 .col-xs-5 {
@@ -1807,15 +1807,15 @@ pre {
     margin-left: 100%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, table .edit, table .delete, .col-md-2, table .gender, table .age, .col-md-3, .col-md-4, table .name, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
-  .col-md-1 {
+  .col-md-1, table .edit, table .delete {
     width: 8.33333%; }
-  .col-md-2 {
+  .col-md-2, table .gender, table .age {
     width: 16.66667%; }
   .col-md-3 {
     width: 25%; }
-  .col-md-4 {
+  .col-md-4, table .name {
     width: 33.33333%; }
   .col-md-5 {
     width: 41.66667%; }
@@ -1913,15 +1913,15 @@ pre {
     margin-left: 100%; } }
 
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1, table .edit, table .delete, .col-lg-2, table .gender, table .age, .col-lg-3, .col-lg-4, table .name, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left; }
-  .col-lg-1 {
+  .col-lg-1, table .edit, table .delete {
     width: 8.33333%; }
-  .col-lg-2 {
+  .col-lg-2, table .gender, table .age {
     width: 16.66667%; }
   .col-lg-3 {
     width: 25%; }
-  .col-lg-4 {
+  .col-lg-4, table .name {
     width: 33.33333%; }
   .col-lg-5 {
     width: 41.66667%; }
@@ -5814,55 +5814,106 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.main {
+  margin: 0 auto;
+  width: 1200px; }
+
+.addPerson > input {
+  font-size: 18px;
+  padding: 15px;
+  margin: 0 20px 0 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  line-height: inherit; }
+
+.addPerson > select {
+  font-size: 18px;
+  padding: 15px;
+  margin: 0 20px 0 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 150px;
+  background: url(../img/arrows.png) no-repeat right center; }
+
+.addPerson > button {
+  font-size: 18px;
+  padding: 15px;
+  margin: 0 20px 0 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  line-height: inherit;
+  font-family: 'fantasy';
+  padding: 15px 30px 15px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none; }
+
+.editable > td > input {
+  border: 1px solid lightgray !important;
+  width: 100%; }
+
+.editable > td .selectArrow {
+  background: url(../img/arrows.png) no-repeat right center !important;
+  border: 1px solid lightgray;
+  width: 100%; }
+
+.sort-icon {
+  background: url("../img/sort_icon.png") no-repeat center;
+  height: 20px;
+  width: 60px;
+  border: 0; }
+
 table {
   background: #f5f5f5;
-  font-size: 14px;
   line-height: 24px;
   margin: 30px auto;
   text-align: left;
-  width: 800px; }
+  width: 1200px; }
   table tr:nth-child(even) {
     background: #eef0f1; }
   table tr:nth-child(odd) {
     background: #FFF; }
   table th {
     background: #FFF;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: normal;
     padding: 5px;
     text-align: left; }
   table td {
-    padding: 5px;
+    padding: 20px;
     text-align: left;
-    font-size: 14px; }
-    table td > select {
-      width: 100px;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      padding: 2px 2px 2px 2px;
-      border: none;
-      margin: 0;
-      background: transparent url("../img/arrows.png") no-repeat right center; }
-    table td .editUser {
-      text-align: right; }
-      table td .editUser > button {
-        background: url("../img/edit-btn.png") no-repeat center;
-        border: 0;
-        height: 30px;
-        width: 30px;
-        margin: 8px 10px 0 0; }
-      table td .editUser > span {
-        width: 1px;
-        height: 30px;
-        background-color: lightgray;
-        position: absolute;
-        margin-top: 9px; }
-    table td .deleteUser {
-      background: url("../img/delete-btn.png") no-repeat center;
+    font-size: 20px; }
+  table .name > input {
+    border: none;
+    background: inherit; }
+  table .gender > select, table .age > select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 2px 2px 2px 2px;
+    border: none;
+    margin: 0;
+    background: inherit; }
+  table .editUser {
+    text-align: right; }
+    table .editUser > button {
+      background: url("../img/edit-btn.png") no-repeat center;
       border: 0;
       height: 30px;
       width: 30px;
-      margin: 8px 0 0 0; }
+      margin: 0 20px 0 0; }
+    table .editUser > span {
+      width: 1px;
+      height: 30px;
+      background-color: lightgray;
+      position: absolute; }
+  table .deleteUser {
+    background: url("../img/delete-btn.png") no-repeat center;
+    border: 0;
+    height: 30px;
+    width: 30px; }
 
 .remove-container {
   position: fixed;
@@ -5903,3 +5954,16 @@ table {
       .remove-container .confirmRemove > button:hover {
         background-color: #1cabb5;
         color: white; }
+
+.paging {
+  text-align: center;
+  width: 100%; }
+  .paging .pagination > li {
+    border: none;
+    font-size: 20px;
+    padding: 12px;
+    color: #666;
+    text-align: center; }
+  .paging .pagination .active {
+    background: #dbf6f5;
+    border-radius: 50%; }

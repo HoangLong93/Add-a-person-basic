@@ -1,4 +1,5 @@
 function deleteUser(child){
+    // create remove user pop-up box
     var content = document.createElement("div");
     content.className = "remove-container";
     var box = document.createElement("div");
@@ -25,6 +26,7 @@ function deleteUser(child){
         document.body.removeChild(content);
     }
     yes.onclick = function(){
+        // remove user
         var row = child.parentNode.parentNode;
         row.parentNode.removeChild(row);
         document.body.removeChild(content);
