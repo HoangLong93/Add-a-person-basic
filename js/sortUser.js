@@ -1,9 +1,10 @@
 function sortUser(child){
     // sort user
     var sortby = child.parentNode.getElementsByTagName("span")[0].innerHTML;
-    if(child.parentNode.classList.contains("reverse")){
+    if(child.parentNode.classList.contains("order")){
         // toggle reverse sort class
-        child.parentNode.classList.remove("reverse");
+        child.parentNode.classList.remove("order");
+        child.parentNode.classList.add("reverse");
         if(sortby == "Name"){
             sortByName(-1)
         }else if(sortby == "Gender"){
@@ -12,7 +13,8 @@ function sortUser(child){
             sortByAge(-1);
         }
     }else{
-        child.parentNode.classList.add("reverse");
+        child.parentNode.classList.remove("reverse");
+        child.parentNode.classList.add("order");
         if(sortby == "Name"){
             sortByName(1)
         }else if(sortby == "Gender"){

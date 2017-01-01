@@ -51,7 +51,7 @@ function addUser(){
     tr.appendChild(name);
     var gender = document.createElement("td");
     gender.className = "gender";
-    gender.innerHTML = '<select disabled><option selected disabled>' + (document.getElementById("UserGender").value) +'</option><option value="male">Male</option><option value="female">Female</option></select>';
+    gender.innerHTML = '<select disabled><option selected disabled>' + (document.getElementById("UserGender").value) +'</option><option value="Male">Male</option><option value="Female">Female</option></select>';
     tr.appendChild(gender);
     var age = document.createElement("td");
     age.className = "age";
